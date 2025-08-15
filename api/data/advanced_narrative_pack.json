@@ -1,0 +1,197 @@
+{
+  "pack_id": "advanced_narrative_pack",
+  "description": "Comprehensive narrative analysis based on Systemic Functional Linguistics, Biber's Multi-Dimensional Analysis, and computational narratology research",
+  "type": "linguistic_framework",
+  "metadata": {
+    "sources": [
+      "Biber Multi-Dimensional Analysis",
+      "Systemic Functional Linguistics",
+      "Computational Narratology",
+      "Digital Humanities Stylometry"
+    ],
+    "version": "1.0",
+    "created": "2025-08-13"
+  },
+  "axes": [
+    {
+      "id": "involved_production",
+      "category": "biber_dimension_1",
+      "labels": ["informational", "involved"],
+      "description": "Biber Dimension 1: Involved vs. Informational Production - measures personal engagement vs. detached presentation",
+      "linguistic_features": ["first_person_pronouns", "contractions", "present_tense", "that_deletions", "place_adverbials"],
+      "type": "dialectical",
+      "effects": []
+    },
+    {
+      "id": "narrative_concerns", 
+      "category": "biber_dimension_2",
+      "labels": ["non_narrative", "narrative"],
+      "description": "Biber Dimension 2: Narrative vs. Non-narrative Concerns - story-telling vs. expository modes",
+      "linguistic_features": ["past_tense", "third_person_pronouns", "perfect_aspect", "public_verbs", "synthetic_negation"],
+      "type": "dialectical", 
+      "effects": []
+    },
+    {
+      "id": "elaborated_reference",
+      "category": "biber_dimension_3", 
+      "labels": ["situation_dependent", "elaborated"],
+      "description": "Biber Dimension 3: Elaborated vs. Situation-dependent Reference - explicit vs. contextual meaning",
+      "linguistic_features": ["wh_relative_clauses", "pied_piping", "phrasal_coordination", "nominalizations"],
+      "type": "dialectical",
+      "effects": []
+    },
+    {
+      "id": "overt_persuasion",
+      "category": "biber_dimension_4",
+      "labels": ["covert", "overt_persuasive"], 
+      "description": "Biber Dimension 4: Overt Expression of Persuasion - argumentative stance marking",
+      "linguistic_features": ["infinitives", "prediction_modals", "suasive_verbs", "conditional_subordination"],
+      "type": "dialectical",
+      "effects": []
+    },
+    {
+      "id": "abstract_information",
+      "category": "biber_dimension_5",
+      "labels": ["concrete", "abstract"],
+      "description": "Biber Dimension 5: Abstract vs. Non-abstract Information - conceptual vs. concrete content",
+      "linguistic_features": ["conjuncts", "agentless_passives", "by_passives", "past_participial_clauses"],
+      "type": "dialectical", 
+      "effects": []
+    },
+    {
+      "id": "online_elaboration", 
+      "category": "biber_dimension_6",
+      "labels": ["planned", "online_elaborative"],
+      "description": "Biber Dimension 6: On-line Informational Elaboration - real-time vs. pre-planned discourse",
+      "linguistic_features": ["that_verb_complements", "that_adjective_complements", "wh_clauses"],
+      "type": "dialectical",
+      "effects": []
+    },
+    {
+      "id": "field_register",
+      "category": "sfl_field", 
+      "labels": ["specialized", "everyday"],
+      "description": "SFL Field: Subject matter and social activity - specialized vs. everyday topics",
+      "linguistic_features": ["technical_vocabulary", "domain_specific_terms", "complexity_measures"],
+      "type": "dialectical",
+      "effects": []
+    },
+    {
+      "id": "tenor_formality",
+      "category": "sfl_tenor",
+      "labels": ["informal", "formal"],
+      "description": "SFL Tenor: Social relationship and power dynamics - formality and social distance", 
+      "linguistic_features": ["honorifics", "modal_verbs", "hedging", "politeness_markers"],
+      "type": "dialectical",
+      "effects": []
+    },
+    {
+      "id": "tenor_affect",
+      "category": "sfl_tenor",
+      "labels": ["neutral", "affective"], 
+      "description": "SFL Tenor: Emotional stance and attitude - affective engagement",
+      "linguistic_features": ["evaluative_adjectives", "emotional_vocabulary", "intensifiers", "exclamations"],
+      "type": "dialectical",
+      "effects": []
+    },
+    {
+      "id": "mode_density",
+      "category": "sfl_mode",
+      "labels": ["sparse", "dense"],
+      "description": "SFL Mode: Information density and lexical complexity",
+      "linguistic_features": ["lexical_density", "nominalization_ratio", "clause_complexity"],
+      "type": "dialectical", 
+      "effects": []
+    },
+    {
+      "id": "temporal_perspective",
+      "category": "narratology",
+      "labels": ["retrospective", "prospective"], 
+      "description": "Temporal orientation and narrative perspective on time",
+      "linguistic_features": ["tense_patterns", "temporal_adverbials", "aspectual_markers"],
+      "type": "dialectical",
+      "effects": []
+    },
+    {
+      "id": "focalization_type",
+      "category": "narratology", 
+      "labels": ["external", "internal"],
+      "description": "Narrative focalization - external vs. internal perspective",
+      "linguistic_features": ["consciousness_verbs", "perception_verbs", "mental_state_expressions"],
+      "type": "dialectical",
+      "effects": []
+    },
+    {
+      "id": "narrative_distance",
+      "category": "narratology",
+      "labels": ["close", "distant"],
+      "description": "Narrative distance from events and characters",
+      "linguistic_features": ["deictic_expressions", "social_deixis", "spatial_markers"],
+      "type": "dialectical",
+      "effects": []
+    },
+    {
+      "id": "discourse_coherence",
+      "category": "textlinguistics", 
+      "labels": ["loose", "tight"],
+      "description": "Coherence and cohesion in discourse structure",
+      "linguistic_features": ["discourse_markers", "anaphoric_references", "lexical_chains"],
+      "type": "dialectical",
+      "effects": []
+    },
+    {
+      "id": "reader_engagement",
+      "category": "reader_response",
+      "labels": ["passive", "engaging"],
+      "description": "Reader engagement and participatory potential",
+      "linguistic_features": ["direct_address", "questions", "imperatives", "inclusive_pronouns"],
+      "type": "dialectical", 
+      "effects": []
+    },
+    {
+      "id": "cognitive_load",
+      "category": "reader_response",
+      "labels": ["simple", "complex"],
+      "description": "Cognitive processing demands on the reader",
+      "linguistic_features": ["sentence_length", "syntactic_complexity", "vocabulary_difficulty"],
+      "type": "dialectical",
+      "effects": []
+    },
+    {
+      "id": "cultural_specificity",
+      "category": "pragmatics",
+      "labels": ["universal", "culture_specific"], 
+      "description": "Cultural knowledge requirements for comprehension",
+      "linguistic_features": ["cultural_references", "idiomatic_expressions", "assumed_knowledge"],
+      "type": "dialectical",
+      "effects": []
+    },
+    {
+      "id": "genre_conformity",
+      "category": "genre_analysis",
+      "labels": ["conventional", "innovative"],
+      "description": "Adherence to vs. innovation within genre conventions",
+      "linguistic_features": ["genre_markers", "register_variation", "structural_patterns"],
+      "type": "dialectical", 
+      "effects": []
+    },
+    {
+      "id": "multimodal_integration",
+      "category": "media_analysis",
+      "labels": ["textual", "multimodal"],
+      "description": "Integration with non-textual meaning-making resources", 
+      "linguistic_features": ["metalinguistic_references", "visual_descriptions", "sound_descriptions"],
+      "type": "dialectical",
+      "effects": []
+    },
+    {
+      "id": "intertextual_density",
+      "category": "intertextuality",
+      "labels": ["original", "intertextual"],
+      "description": "Density of references to other texts and cultural works",
+      "linguistic_features": ["quotations", "allusions", "parody_markers", "citation_patterns"],
+      "type": "dialectical",
+      "effects": []
+    }
+  ]
+}

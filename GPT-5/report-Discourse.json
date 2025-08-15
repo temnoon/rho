@@ -1,0 +1,63 @@
+{
+  "version": "rho-demo-0.2.0",
+  "dims": 16,
+  "hash_dim": 256,
+  "edit_prompt": "Make it easier to understand, conversational, with subtle foreshadowing that primes the reader before the explicit explanation.",
+  "operations": [
+    {
+      "op": "selective_push",
+      "attribute": "conversational",
+      "alpha": 0.0
+    },
+    {
+      "op": "selective_push",
+      "attribute": "clarity",
+      "alpha": 0.4
+    },
+    {
+      "op": "selective_push",
+      "attribute": "foreshadow",
+      "alpha": 0.1
+    },
+    {
+      "op": "depolarize",
+      "p": 0.05
+    }
+  ],
+  "metrics_before": {
+    "purity": 0.10623459643546174,
+    "entropy": 2.4804709718764597,
+    "probs": {
+      "conversational": {
+        "plus": 0.07574898208929787,
+        "minus": 0.9242510179107021
+      },
+      "clarity": {
+        "plus": 0.07803354074945783,
+        "minus": 0.9219664592505421
+      },
+      "foreshadow": {
+        "plus": 0.07369792709731228,
+        "minus": 0.9263020729026877
+      }
+    }
+  },
+  "metrics_after": {
+    "purity": 0.2927783653688161,
+    "entropy": 1.8010433732329445,
+    "probs": {
+      "conversational": {
+        "plus": 0.3767634403203252,
+        "minus": 0.6232365596796748
+      },
+      "clarity": {
+        "plus": 0.33961535042579677,
+        "minus": 0.6603846495742032
+      },
+      "foreshadow": {
+        "plus": 0.3909686075023757,
+        "minus": 0.6090313924976243
+      }
+    }
+  }
+}

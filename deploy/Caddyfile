@@ -1,0 +1,75 @@
+# Caddyfile for Rho Small‑Embedding Demo (rho.humanizer.com)
+#
+# This sample Caddyfile:
+# - Serves the web frontend (static files) from the `web` service on port 80
+# - Proxies /api/* to the FastAPI backend `api:8000`
+# - Enables gzip/zstd encoding and automatic TLS via Let's Encrypt
+# - Adds some helpful headers and simple logging configuration
+#
+# In docker-compose, use:
+#   - service name `api` listening on :8000
+#   - service name `web` listening on :80
+#
+# Note: In production set an appropriate admin email and tighten origins/CORS as needed.
+
+rho.humanizer.com {
+	# Automatic HTTPS (Caddy obtains and renews certificates for you)
+	# Replace with your preferred contact email for cert notices:
+	tls admin@humanizer.com
+
+	# Compression for responses
+	encode gzip zstd
+
+	# Recommended headers for security & privacy (adjust as required)
+	header {
+		# Basic security headers
+		Strict-Transport-Security "max-age=63072000; includeSubDomains; preload"
+		X-Frame-Options "DENY"
+		X-Content-Type-Options "nosniff"
+		Referrer-Policy "no-referrer-when-downgrade"
+		# Reduce information leakage
+		Server ""
+	}
+
+	# Logging: write access logs to a file inside the container.
+	# Mount a volume at /data/caddy/logs to persist logs across restarts.
+	log {
+		output file /data/caddy/logs/access.log {
+			roll true               # rotate logs
+			roll_size_mb 10
+			roll_local_time
+			roll_keep 5
+			roll_keep_for 72h
+		}
+		format single_field common_log
+		level INFO
+	}
+
+	# Proxy API requests to the backend
+	reverse_proxy /api/* {
+		to http://api:8000
+		# optional health check / retry tuning
+		transport http {
+			read_buffer 4096
+			idle_timeout 30s
+		}
+	}
+
+	# Serve web UI from the web container
+	# This sends all other requests to the web service (static files served by nginx in the container).
+	reverse_proxy /* {
+		to http://web:80
+	}
+
+	# Optional: respond to a simple health endpoint on the Caddy host
+	# Useful for load balancers to check the site is up.
+	respond /healthz "ok" 200
+}
+
+# Additional site blocks can be added here for staging, API-only endpoints, or
+# a dev subdomain. For e.g. local development:
+# dev.rho.humanizer.com {
+#   reverse_proxy /api/* http://localhost:8000
+#   reverse_proxy /* http://localhost:5173
+#   tls internal
+# }

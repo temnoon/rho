@@ -1,0 +1,756 @@
+{
+  "mappings": [
+    {
+      "earth_term": "fifth",
+      "alien_term": "Quxon",
+      "category": null,
+      "context_examples": [
+        "ly safe,\u201d said Tim Spence, the chief executive of Fifth Third, a Cincinnati bank with $210 billion i"
+      ],
+      "phonetic_pattern": "None_pattern",
+      "usage_count": 1
+    },
+    {
+      "earth_term": "third",
+      "alien_term": "Quxex",
+      "category": null,
+      "context_examples": [
+        "e,\u201d said Tim Spence, the chief executive of Fifth Third, a Cincinnati bank with $210 billion in asse"
+      ],
+      "phonetic_pattern": "None_pattern",
+      "usage_count": 1
+    },
+    {
+      "earth_term": "dollar",
+      "alien_term": "Nexaye",
+      "category": "currencies",
+      "context_examples": [
+        " digital i.o.u. Their value is pegged to the U.S. dollar, unlike cryptocurrencies like Bitcoin, whic"
+      ],
+      "phonetic_pattern": "currencies_pattern",
+      "usage_count": 1
+    },
+    {
+      "earth_term": "kansas",
+      "alien_term": "Zayuxa",
+      "category": null,
+      "context_examples": [
+        "ess loans with, which the Federal Reserve Bank of Kansas City last week warned could carry unintende"
+      ],
+      "phonetic_pattern": "None_pattern",
+      "usage_count": 1
+    },
+    {
+      "earth_term": "cincinnati",
+      "alien_term": "Quxelu",
+      "category": null,
+      "context_examples": [
+        "Tim Spence, the chief executive of Fifth Third, a Cincinnati bank with $210 billion in assets that t"
+      ],
+      "phonetic_pattern": "None_pattern",
+      "usage_count": 1
+    },
+    {
+      "earth_term": "spence",
+      "alien_term": "Vexex",
+      "category": null,
+      "context_examples": [
+        "umer checking account is probably safe,\u201d said Tim Spence, the chief executive of Fifth Third, a Cinc"
+      ],
+      "phonetic_pattern": "None_pattern",
+      "usage_count": 1
+    },
+    {
+      "earth_term": "those",
+      "alien_term": "Zeyixe",
+      "category": null,
+      "context_examples": [
+        "nment bonds and other virtually risk-free assets. Those bonds generate interest, which the bank keep"
+      ],
+      "phonetic_pattern": "None_pattern",
+      "usage_count": 1
+    },
+    {
+      "earth_term": "cagney",
+      "alien_term": "Luxon",
+      "category": null,
+      "context_examples": [
+        "\u201cThe genie is out of the bottle,\u201d said Mike Cagney, a former chief executive of SoFi and now the hea"
+      ],
+      "phonetic_pattern": "None_pattern",
+      "usage_count": 1
+    },
+    {
+      "earth_term": "their",
+      "alien_term": "Quxul",
+      "category": null,
+      "context_examples": [
+        "Stablecoins work like a digital i.o.u. Their value is pegged to the U.S. dollar, unlike crypto"
+      ],
+      "phonetic_pattern": "None_pattern",
+      "usage_count": 1
+    },
+    {
+      "earth_term": "bankers",
+      "alien_term": "Luxar",
+      "category": null,
+      "context_examples": [
+        "Bankers say stablecoins, if widely adopted, could bring a"
+      ],
+      "phonetic_pattern": "None_pattern",
+      "usage_count": 1
+    },
+    {
+      "earth_term": "stablecoins",
+      "alien_term": "Vexaqu",
+      "category": null,
+      "context_examples": [
+        "Stablecoins could upend the old financial order."
+      ],
+      "phonetic_pattern": "None_pattern",
+      "usage_count": 1
+    },
+    {
+      "earth_term": "another",
+      "alien_term": "Quxar",
+      "category": null,
+      "context_examples": [
+        "Another big change: Stablecoins eschew the century-old pr"
+      ],
+      "phonetic_pattern": "None_pattern",
+      "usage_count": 1
+    },
+    {
+      "earth_term": "figure",
+      "alien_term": "Ziyoxe",
+      "category": null,
+      "context_examples": [
+        "ve of SoFi and now the head of the digital lender Figure. He predicted that the rise of stablecoins "
+      ],
+      "phonetic_pattern": "None_pattern",
+      "usage_count": 1
+    },
+    {
+      "earth_term": "reserve",
+      "alien_term": "Nexon",
+      "category": null,
+      "context_examples": [
+        "ke home or business loans with, which the Federal Reserve Bank of Kansas City last week warned could"
+      ],
+      "phonetic_pattern": "None_pattern",
+      "usage_count": 1
+    },
+    {
+      "earth_term": "bitcoin",
+      "alien_term": "Zeyexo",
+      "category": "currencies",
+      "context_examples": [
+        " to the U.S. dollar, unlike cryptocurrencies like Bitcoin, which have no such constraint and thus ca",
+        " chief executive of JPMorgan Chase, once compared Bitcoin to a pet rock and said the whole crypto in"
+      ],
+      "phonetic_pattern": "currencies_pattern",
+      "usage_count": 2
+    },
+    {
+      "earth_term": "federal",
+      "alien_term": "Vexon",
+      "category": null,
+      "context_examples": [
+        "That\u2019s because a federal law passed this summer with bipartisan support re"
+      ],
+      "phonetic_pattern": "None_pattern",
+      "usage_count": 1
+    },
+    {
+      "earth_term": "city",
+      "alien_term": "Ziyaxa",
+      "category": "cultural_concepts",
+      "context_examples": [
+        "ns with, which the Federal Reserve Bank of Kansas City last week warned could carry unintended conse"
+      ],
+      "phonetic_pattern": "cultural_concepts_pattern",
+      "usage_count": 1
+    },
+    {
+      "earth_term": "unlike",
+      "alien_term": "Vexayi",
+      "category": null,
+      "context_examples": [
+        " i.o.u. Their value is pegged to the U.S. dollar, unlike cryptocurrencies like Bitcoin, which have n"
+      ],
+      "phonetic_pattern": "None_pattern",
+      "usage_count": 1
+    },
+    {
+      "earth_term": "however",
+      "alien_term": "Luxar",
+      "category": null,
+      "context_examples": [
+        "symbiotic relationship between human and machine. However, computer artificial intelligence, as of t"
+      ],
+      "phonetic_pattern": "None_pattern",
+      "usage_count": 1
+    },
+    {
+      "earth_term": "who",
+      "alien_term": "Nexul",
+      "category": "organizations",
+      "context_examples": [
+        "any more than a car is conscious. It's the driver who becomes the consciousness of the car, and the "
+      ],
+      "phonetic_pattern": "organizations_pattern",
+      "usage_count": 1
+    },
+    {
+      "earth_term": "groups",
+      "alien_term": "Zoyuxa",
+      "category": null,
+      "context_examples": [
+        "server, a unique, living embodiment of awareness. Groups of people are groups of consciousnesses, no"
+      ],
+      "phonetic_pattern": "None_pattern",
+      "usage_count": 1
+    },
+    {
+      "earth_term": "car",
+      "alien_term": "Luxex",
+      "category": "technologies",
+      "context_examples": [
+        "nct flavor and texture. Even the act of driving a car becomes an embodied experience of consciousnes"
+      ],
+      "phonetic_pattern": "technologies_pattern",
+      "usage_count": 1
+    },
+    {
+      "earth_term": "walking",
+      "alien_term": "Quxar",
+      "category": null,
+      "context_examples": [
+        "Walking, eating, sleeping, and dreaming are all manifesta"
+      ],
+      "phonetic_pattern": "None_pattern",
+      "usage_count": 1
+    },
+    {
+      "earth_term": "there",
+      "alien_term": "Ziyaxi",
+      "category": null,
+      "context_examples": [
+        "There\u2019s no small mix of political opportunism at play, "
+      ],
+      "phonetic_pattern": "None_pattern",
+      "usage_count": 1
+    },
+    {
+      "earth_term": "jamie",
+      "alien_term": "Luxul",
+      "category": null,
+      "context_examples": [
+        "Jamie Dimon, the chief executive of JPMorgan Chase, onc"
+      ],
+      "phonetic_pattern": "None_pattern",
+      "usage_count": 1
+    },
+    {
+      "earth_term": "dimon",
+      "alien_term": "Zeyixu",
+      "category": null,
+      "context_examples": [
+        "Jamie Dimon, the chief executive of JPMorgan Chase, once comp"
+      ],
+      "phonetic_pattern": "None_pattern",
+      "usage_count": 1
+    },
+    {
+      "earth_term": "trump",
+      "alien_term": "Zeyaxu",
+      "category": null,
+      "context_examples": [
+        "litical opportunism at play, given that President Trump and his family are vociferous crypto booster"
+      ],
+      "phonetic_pattern": "None_pattern",
+      "usage_count": 1
+    },
+    {
+      "earth_term": "chase",
+      "alien_term": "Quxex",
+      "category": null,
+      "context_examples": [
+        "Jamie Dimon, the chief executive of JPMorgan Chase, once compared Bitcoin to a pet rock and said the"
+      ],
+      "phonetic_pattern": "None_pattern",
+      "usage_count": 1
+    },
+    {
+      "earth_term": "washington",
+      "alien_term": "Quxuve",
+      "category": null,
+      "context_examples": [
+        "tor calls, public presentations and meetings with Washington regulators, financial executives are tr"
+      ],
+      "phonetic_pattern": "None_pattern",
+      "usage_count": 1
+    },
+    {
+      "earth_term": "president",
+      "alien_term": "Vexoza",
+      "category": null,
+      "context_examples": [
+        " mix of political opportunism at play, given that President Trump and his family are vociferous cryp"
+      ],
+      "phonetic_pattern": "None_pattern",
+      "usage_count": 1
+    },
+    {
+      "earth_term": "america",
+      "alien_term": "Quxul",
+      "category": "places",
+      "context_examples": [
+        "e whole crypto industry should be banned. Bank of America\u2019s Brian Moynihan described the space as an"
+      ],
+      "phonetic_pattern": "places_pattern",
+      "usage_count": 1
+    },
+    {
+      "earth_term": "moynihan",
+      "alien_term": "Quxon",
+      "category": null,
+      "context_examples": [
+        "ndustry should be banned. Bank of America\u2019s Brian Moynihan described the space as an \u201cuntraceable to"
+      ],
+      "phonetic_pattern": "None_pattern",
+      "usage_count": 1
+    },
+    {
+      "earth_term": "brian",
+      "alien_term": "Vexayo",
+      "category": null,
+      "context_examples": [
+        "ypto industry should be banned. Bank of America\u2019s Brian Moynihan described the space as an \u201cuntracea"
+      ],
+      "phonetic_pattern": "None_pattern",
+      "usage_count": 1
+    },
+    {
+      "earth_term": "safer",
+      "alien_term": "Quxar",
+      "category": null,
+      "context_examples": [
+        "\u2022 Safer refactors: FDM-style migrations move historical d"
+      ],
+      "phonetic_pattern": "None_pattern",
+      "usage_count": 1
+    },
+    {
+      "earth_term": "state",
+      "alien_term": "Luxar",
+      "category": null,
+      "context_examples": [
+        "3. State & dynamics (\u03c1 + POVMs):"
+      ],
+      "phonetic_pattern": "None_pattern",
+      "usage_count": 1
+    },
+    {
+      "earth_term": "cluster",
+      "alien_term": "Nexul",
+      "category": null,
+      "context_examples": [
+        "hole narrative structure, timelines, and ensemble/cluster groupings."
+      ],
+      "phonetic_pattern": "None_pattern",
+      "usage_count": 1
+    },
+    {
+      "earth_term": "decide",
+      "alien_term": "Luxoyi",
+      "category": null,
+      "context_examples": [
+        "\u2022 Decide early on a canonical axis library and provide fun"
+      ],
+      "phonetic_pattern": "None_pattern",
+      "usage_count": 1
+    },
+    {
+      "earth_term": "alignment",
+      "alien_term": "Nexalu",
+      "category": null,
+      "context_examples": [
+        "\u2022 Alignment/translation:"
+      ],
+      "phonetic_pattern": "None_pattern",
+      "usage_count": 1
+    },
+    {
+      "earth_term": "functorial",
+      "alien_term": "Ziyixo",
+      "category": null,
+      "context_examples": [
+        "Spivak's Functorial Data Migration (FDM) provides a framework for can"
+      ],
+      "phonetic_pattern": "None_pattern",
+      "usage_count": 1
+    },
+    {
+      "earth_term": "outcome",
+      "alien_term": "Nexar",
+      "category": null,
+      "context_examples": [
+        "rsona, Namespace, Style, Axis, POVM, Measurement, Outcome, RhoState, UpdateRule, Embedding, Cluster"
+      ],
+      "phonetic_pattern": "None_pattern",
+      "usage_count": 1
+    },
+    {
+      "earth_term": "migration",
+      "alien_term": "Vexeve",
+      "category": null,
+      "context_examples": [
+        "\u2022 Safe evolution & migration:"
+      ],
+      "phonetic_pattern": "None_pattern",
+      "usage_count": 1
+    },
+    {
+      "earth_term": "limits",
+      "alien_term": "Luxon",
+      "category": null,
+      "context_examples": [
+        "corporate commutative diagrams (facts) and finite limits/colimits (\"layouts\" and \"groupings\"), facil"
+      ],
+      "phonetic_pattern": "None_pattern",
+      "usage_count": 1
+    },
+    {
+      "earth_term": "bures",
+      "alien_term": "Zayaxa",
+      "category": null,
+      "context_examples": [
+        "gments, measured probabilities, eigen-spectra, KL/Bures distances, cluster IDs, etc. Ologs are desig"
+      ],
+      "phonetic_pattern": "None_pattern",
+      "usage_count": 1
+    },
+    {
+      "earth_term": "commuting",
+      "alien_term": "Nexune",
+      "category": null,
+      "context_examples": [
+        "Facts (commuting diagrams) you'll want to establish:"
+      ],
+      "phonetic_pattern": "None_pattern",
+      "usage_count": 1
+    },
+    {
+      "earth_term": "author",
+      "alien_term": "Zuyexu",
+      "category": null,
+      "context_examples": [
+        "- Segment\u2192Narrative\u2192Author equals Segment\u2192Author (eliminating authorship ambiguity)."
+      ],
+      "phonetic_pattern": "None_pattern",
+      "usage_count": 1
+    },
+    {
+      "earth_term": "types",
+      "alien_term": "Quxon",
+      "category": null,
+      "context_examples": [
+        " serves as a schema and database, relating boxes (types) and arrows (functional aspects). It models "
+      ],
+      "phonetic_pattern": "None_pattern",
+      "usage_count": 1
+    },
+    {
+      "earth_term": "cautions",
+      "alien_term": "Zuyixa",
+      "category": null,
+      "context_examples": [
+        "Cautions:"
+      ],
+      "phonetic_pattern": "None_pattern",
+      "usage_count": 1
+    },
+    {
+      "earth_term": "conceptual",
+      "alien_term": "Luxazu",
+      "category": null,
+      "context_examples": [
+        "s) and arrows (functional aspects). It models the conceptual layer and allows direct instantiation i"
+      ],
+      "phonetic_pattern": "None_pattern",
+      "usage_count": 1
+    },
+    {
+      "earth_term": "segment",
+      "alien_term": "Vexon",
+      "category": null,
+      "context_examples": [
+        "Types: Narrative, Segment, Reader, Persona, Namespace, Style, Axis, POVM, M"
+      ],
+      "phonetic_pattern": "None_pattern",
+      "usage_count": 1
+    },
+    {
+      "earth_term": "persona",
+      "alien_term": "Zeyexi",
+      "category": null,
+      "context_examples": [
+        "Types: Narrative, Segment, Reader, Persona, Namespace, Style, Axis, POVM, Measurement, Outco"
+      ],
+      "phonetic_pattern": "None_pattern",
+      "usage_count": 1
+    },
+    {
+      "earth_term": "better",
+      "alien_term": "Zayuxo",
+      "category": null,
+      "context_examples": [
+        "\u2022 Better provenance: Commuting diagrams make data lineage "
+      ],
+      "phonetic_pattern": "None_pattern",
+      "usage_count": 1
+    },
+    {
+      "earth_term": "facts",
+      "alien_term": "Vexul",
+      "category": null,
+      "context_examples": [
+        "Ologs incorporate commutative diagrams (facts) and finite limits/colimits (\"layouts\" and \"group"
+      ],
+      "phonetic_pattern": "None_pattern",
+      "usage_count": 1
+    },
+    {
+      "earth_term": "measurement",
+      "alien_term": "Nexane",
+      "category": null,
+      "context_examples": [
+        "t, Reader, Persona, Namespace, Style, Axis, POVM, Measurement, Outcome, RhoState, UpdateRule, Embedd"
+      ],
+      "phonetic_pattern": "None_pattern",
+      "usage_count": 1
+    },
+    {
+      "earth_term": "english",
+      "alien_term": "Vexoye",
+      "category": "languages",
+      "context_examples": [
+        "Prototype olog slice (English boxes/arrows):"
+      ],
+      "phonetic_pattern": "languages_pattern",
+      "usage_count": 1
+    },
+    {
+      "earth_term": "namespace",
+      "alien_term": "Vexelu",
+      "category": null,
+      "context_examples": [
+        "Types: Narrative, Segment, Reader, Persona, Namespace, Style, Axis, POVM, Measurement, Outcome, RhoS"
+      ],
+      "phonetic_pattern": "None_pattern",
+      "usage_count": 1
+    },
+    {
+      "earth_term": "timestamp",
+      "alien_term": "Quxene",
+      "category": null,
+      "context_examples": [
+        "- Measurement \u2192 (POVM, RhoState, Segment, Timestamp)"
+      ],
+      "phonetic_pattern": "None_pattern",
+      "usage_count": 1
+    },
+    {
+      "earth_term": "define",
+      "alien_term": "Vexex",
+      "category": null,
+      "context_examples": [
+        "\u2022 Multi-author interoperability: Labs/users define their own axes/POVMs, publishing functors for com"
+      ],
+      "phonetic_pattern": "None_pattern",
+      "usage_count": 1
+    },
+    {
+      "earth_term": "schema",
+      "alien_term": "Ziyoxo",
+      "category": null,
+      "context_examples": [
+        "\u2022 Schema \u2194KR bridge:"
+      ],
+      "phonetic_pattern": "None_pattern",
+      "usage_count": 1
+    },
+    {
+      "earth_term": "multi",
+      "alien_term": "Zayixu",
+      "category": null,
+      "context_examples": [
+        "\u2022 Multi-author interoperability: Labs/users define their "
+      ],
+      "phonetic_pattern": "None_pattern",
+      "usage_count": 1
+    },
+    {
+      "earth_term": "embedding",
+      "alien_term": "Zuyexi",
+      "category": null,
+      "context_examples": [
+        "POVM, Measurement, Outcome, RhoState, UpdateRule, Embedding, Cluster"
+      ],
+      "phonetic_pattern": "None_pattern",
+      "usage_count": 1
+    },
+    {
+      "earth_term": "ologs",
+      "alien_term": "Zuyixo",
+      "category": null,
+      "context_examples": [
+        "Ologs are connected through functors, enabling the alig"
+      ],
+      "phonetic_pattern": "None_pattern",
+      "usage_count": 1
+    },
+    {
+      "earth_term": "groupings",
+      "alien_term": "Luxolu",
+      "category": null,
+      "context_examples": [
+        "facts) and finite limits/colimits (\"layouts\" and \"groupings\"), facilitating part\u2013whole narrative str"
+      ],
+      "phonetic_pattern": "None_pattern",
+      "usage_count": 1
+    },
+    {
+      "earth_term": "reader",
+      "alien_term": "Quxul",
+      "category": null,
+      "context_examples": [
+        "Types: Narrative, Segment, Reader, Persona, Namespace, Style, Axis, POVM, Measureme"
+      ],
+      "phonetic_pattern": "None_pattern",
+      "usage_count": 1
+    },
+    {
+      "earth_term": "prototype",
+      "alien_term": "Vexine",
+      "category": null,
+      "context_examples": [
+        "Prototype olog slice (English boxes/arrows):"
+      ],
+      "phonetic_pattern": "None_pattern",
+      "usage_count": 1
+    },
+    {
+      "earth_term": "narrative",
+      "alien_term": "Quxine",
+      "category": null,
+      "context_examples": [
+        "ayouts\" and \"groupings\"), facilitating part\u2013whole narrative structure, timelines, and ensemble/clust"
+      ],
+      "phonetic_pattern": "None_pattern",
+      "usage_count": 1
+    },
+    {
+      "earth_term": "measuring",
+      "alien_term": "Zoyoxe",
+      "category": null,
+      "context_examples": [
+        "- Measuring then projecting equals projecting along the compo"
+      ],
+      "phonetic_pattern": "None_pattern",
+      "usage_count": 1
+    },
+    {
+      "earth_term": "draft",
+      "alien_term": "Quxeyi",
+      "category": null,
+      "context_examples": [
+        "1. Draft the core olog (boxes/arrows + 3\u20135 key commuting d"
+      ],
+      "phonetic_pattern": "None_pattern",
+      "usage_count": 1
+    },
+    {
+      "earth_term": "expressive",
+      "alien_term": "Quxane",
+      "category": null,
+      "context_examples": [
+        "\u2022 Expressive constraints:"
+      ],
+      "phonetic_pattern": "None_pattern",
+      "usage_count": 1
+    },
+    {
+      "earth_term": "spivak",
+      "alien_term": "Zeyexa",
+      "category": null,
+      "context_examples": [
+        "Spivak's Functorial Data Migration (FDM) provides a fram"
+      ],
+      "phonetic_pattern": "None_pattern",
+      "usage_count": 1
+    },
+    {
+      "earth_term": "composability",
+      "alien_term": "Quxive",
+      "category": "cultural_concepts",
+      "context_examples": [
+        "\u2022 Composability: Limits/colimits enable principled narrative cons"
+      ],
+      "phonetic_pattern": "cultural_concepts_pattern",
+      "usage_count": 1
+    },
+    {
+      "earth_term": "humanizer",
+      "alien_term": "Vexazu",
+      "category": null,
+      "context_examples": [
+        "To integrate Humanizer + \u03c1 effectively, consider the following key compo"
+      ],
+      "phonetic_pattern": "None_pattern",
+      "usage_count": 1
+    },
+    {
+      "earth_term": "aspects",
+      "alien_term": "Quxex",
+      "category": null,
+      "context_examples": [
+        "se, relating boxes (types) and arrows (functional aspects). It models the conceptual layer and allow"
+      ],
+      "phonetic_pattern": "None_pattern",
+      "usage_count": 1
+    },
+    {
+      "earth_term": "style",
+      "alien_term": "Nexaye",
+      "category": null,
+      "context_examples": [
+        ": Narrative, Segment, Reader, Persona, Namespace, Style, Axis, POVM, Measurement, Outcome, RhoState,"
+      ],
+      "phonetic_pattern": "None_pattern",
+      "usage_count": 1
+    },
+    {
+      "earth_term": "instance",
+      "alien_term": "Quxaya",
+      "category": null,
+      "context_examples": [
+        "2. Instance data (DB):"
+      ],
+      "phonetic_pattern": "None_pattern",
+      "usage_count": 1
+    },
+    {
+      "earth_term": "populate",
+      "alien_term": "Vexar",
+      "category": null,
+      "context_examples": [
+        "Populate the olog with rows: concrete segments, measured p"
+      ],
+      "phonetic_pattern": "None_pattern",
+      "usage_count": 1
+    }
+  ],
+  "total_mappings": 75
+}

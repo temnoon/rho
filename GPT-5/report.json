@@ -1,0 +1,76 @@
+{
+  "version": "rho-demo-0.1.0",
+  "dims": 16,
+  "hash_dim": 256,
+  "operations": [
+    {
+      "op": "selective_push",
+      "attribute": "first_person",
+      "alpha": 0.35
+    },
+    {
+      "op": "selective_push",
+      "attribute": "unreliable",
+      "alpha": 0.3
+    },
+    {
+      "op": "selective_push",
+      "attribute": "noir",
+      "alpha": 0.3
+    },
+    {
+      "op": "depolarize",
+      "p": 0.08
+    },
+    {
+      "op": "selective_push",
+      "attribute": "valence",
+      "alpha": 0.2
+    }
+  ],
+  "metrics_before": {
+    "purity": 0.23507223648674277,
+    "entropy": 1.5286294435138612,
+    "probs": {
+      "first_person": {
+        "plus": 0.10379028312018049,
+        "minus": 0.8962097168798195
+      },
+      "unreliable": {
+        "plus": 0.08997081954597484,
+        "minus": 0.9100291804540251
+      },
+      "noir": {
+        "plus": 0.07802778989450437,
+        "minus": 0.9219722101054957
+      },
+      "valence": {
+        "plus": 0.09975918814259532,
+        "minus": 0.9002408118574047
+      }
+    }
+  },
+  "metrics_after": {
+    "purity": 0.4741848099933383,
+    "entropy": 1.2830827520103802,
+    "probs": {
+      "first_person": {
+        "plus": 0.5751861558985839,
+        "minus": 0.42481384410141604
+      },
+      "unreliable": {
+        "plus": 0.5756038388765885,
+        "minus": 0.42439616112341155
+      },
+      "noir": {
+        "plus": 0.5827855737009767,
+        "minus": 0.4172144262990232
+      },
+      "valence": {
+        "plus": 0.5393575849280908,
+        "minus": 0.4606424150719092
+      }
+    }
+  },
+  "edit_prompt": "Retell this as first-person from the hare, make the narrator somewhat unreliable, add a noir vibe, but keep overall valence slightly positive."
+}
