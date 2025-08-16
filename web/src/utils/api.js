@@ -4,7 +4,8 @@
  * Provides standardized functions for making API calls with proper error handling.
  */
 
-const API = "http://localhost:8192";
+// Use environment variable or fallback to default
+const API = import.meta.env.VITE_API_URL || "http://localhost:8192";
 
 export function apiUrl(path) {
   if (!path) return API;

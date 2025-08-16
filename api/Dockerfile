@@ -13,12 +13,13 @@ ENV PYTHONUNBUFFERED=1 \
 WORKDIR /app
 
 # Install OS-level deps required for building some Python wheels (kept minimal)
-# and for possible future DB drivers (libpq-dev).
+# and for possible future DB drivers (libpq-dev). Also add curl for health checks.
 RUN apt-get update && \
     apt-get install -y --no-install-recommends \
     build-essential \
     ca-certificates \
-    libpq-dev && \
+    libpq-dev \
+    curl && \
     rm -rf /var/lib/apt/lists/*
 
 # Copy and install python deps
@@ -37,9 +38,6 @@ USER appuser
 
 # Expose the port the app will run on
 EXPOSE 8000
-
-# Simple healthcheck (optional). If you prefer Docker HEALTHCHECK, uncomment below.
-# HEALTHCHECK --interval=30s --timeout=3s --start-period=5s CMD curl -f http://127.0.0.1:8000/healthz || exit 1
 
 # Default command: run uvicorn on startup
 # Note: in production you may want to use a process manager or configure workers
