@@ -1,0 +1,25 @@
+{
+  "job_id": "9273426c-f4b5-4f17-ac4c-43876263e8c9",
+  "status": "completed",
+  "created_at": 1755315857.140971,
+  "completed_at": 1755315870.1529331,
+  "progress": 1.0,
+  "result": null,
+  "error": null,
+  "operation": "quantum_transformation_batch",
+  "parameters": {
+    "default_transformation": "enhance_narrative",
+    "default_strength": 0.7,
+    "creativity": 0.8,
+    "preservation": 0.8,
+    "complexity": 0.5
+  },
+  "items": [
+    {
+      "text": "Alice wondered down the rabbit hole into a world of paradox.",
+      "transformation_type": "enhance_narrative",
+      "strength": 0.7
+    }
+  ],
+  "scheduled_for": null
+}

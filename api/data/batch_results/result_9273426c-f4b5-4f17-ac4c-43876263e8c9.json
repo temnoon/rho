@@ -1,0 +1,147 @@
+{
+  "operation": "quantum_transformation_batch",
+  "total_items": 1,
+  "successful_items": 1,
+  "failed_items": 0,
+  "results": [
+    {
+      "item_index": 0,
+      "success": true,
+      "original_text": "Alice wondered down the rabbit hole into a world of paradox.",
+      "transformed_text": "Alice pondered the depths of a rabbit hole's enigmatic paradoxical realm.",
+      "quantum_distance": 1.6219664500383146e-16,
+      "audit_trail": {
+        "timestamp": 1755315864.417588,
+        "request_parameters": {
+          "text_length": 60,
+          "text_preview": "Alice wondered down the rabbit hole into a world of paradox.",
+          "transformation_name": "enhance_narrative",
+          "strength": 0.7,
+          "creativity_level": 0.5,
+          "preservation_level": 0.8,
+          "complexity_target": 0.5,
+          "tone_target": "balanced",
+          "focus_area": "meaning",
+          "agent_request": null
+        },
+        "quantum_steps": [
+          {
+            "step": 1,
+            "name": "create_quantum_state",
+            "description": "Initialize quantum density matrix ρ",
+            "rho_id": "b7480a04-b1f8-4e6b-8afd-a24ec19e9b8e",
+            "duration": 0.0003578662872314453
+          },
+          {
+            "step": 2,
+            "name": "text_to_quantum_state",
+            "description": "Convert text to quantum density matrix via embedding",
+            "channel_type": "rank_one_update",
+            "alpha": 0.3,
+            "original_properties": {
+              "trace": 1.0,
+              "purity": 0.01566855620178824,
+              "max_eigenvalue": 0.022172949002191297,
+              "effective_rank": 64
+            },
+            "duration": 0.6331000328063965,
+            "success": true
+          },
+          {
+            "step": 3,
+            "name": "quantum_state_normalization",
+            "description": "Ensure ρ is positive semidefinite and trace-normalized after POVM operations",
+            "normalization_details": {
+              "negative_eigenvals_removed": 0,
+              "final_trace": 1.0000000000000002,
+              "final_purity": 0.01566855620178824,
+              "effective_rank": 64
+            },
+            "duration": 0.00023603439331054688,
+            "success": true
+          },
+          {
+            "step": 4,
+            "name": "quantum_to_text_generation",
+            "description": "Generate new text by projecting modified ρ through quantum embedding bridge",
+            "generation_details": {
+              "quantum_entropy": 4.157648648705052,
+              "final_purity": 0.01566855620178824,
+              "effective_rank": 64,
+              "dominant_eigenvalue": 0.02217294900219129,
+              "text_generated": true,
+              "original_length": 60,
+              "transformed_length": 73
+            },
+            "duration": 4.0797178745269775,
+            "success": true
+          }
+        ],
+        "llm_interaction": {
+          "provider": "ollama",
+          "model": "llama3.2",
+          "attempts": [
+            {
+              "provider": "groq",
+              "status_code": 200,
+              "duration": 1.1627161502838135,
+              "success": true,
+              "request_params": {
+                "model": "openai/gpt-oss-120b",
+                "messages": [
+                  {
+                    "role": "system",
+                    "content": "You are a text transformation engine. Your ONLY job is to output the transformed text that preserves the full length and detail of the original. The target output should be approximately 11 words. Do NOT provide explanations, analyses, or commentary. Output ONLY the transformed text - no bullet points, no lists, no meta-commentary about changes made."
+                  },
+                  {
+                    "role": "user",
+                    "content": "Transform this text while preserving its full length and all details: Alice wondered down the rabbit hole into a world of paradox.\n\nStyle: balanced tone, diffuse and exploratory, semantically rich and nuanced\n\nRemember: Output should be approximately 11 words and maintain all the information from the original.\n"
+                  }
+                ],
+                "temperature": 0.3,
+                "max_tokens": 500,
+                "top_p": 0.9,
+                "stop": [
+                  "<|im_end|>",
+                  "\n\n---",
+                  "\n\n*"
+                ]
+              }
+            }
+          ],
+          "prompt_used": "<|im_start|>system\nYou are a text transformation engine. Your ONLY job is to output the transformed text that preserves the full length and detail of the original.\n\nCRITICAL REQUIREMENTS:\n- Output ONLY the transformed text\n- PRESERVE THE FULL LENGTH: Your output should be approximately 11 words (60 characters)\n- MAINTAIN ALL DETAILS: Do not summarize, condense, or shorten the content\n- Transform style/tone while keeping ALL information and sections\n- NO meta-commentary, explanations, or bullet points\n- If the original has multiple paragraphs, maintain that structure\n- Transform each part fully rather than summarizing\n\nStyle guidance: balanced tone, diffuse and exploratory, semantically rich and nuanced\nThe original text is 11 words long. Your transformation must be similarly comprehensive.\n<|im_end|>\n\n<|im_start|>user\nTransform this text while preserving its full length and all details: Alice wondered down the rabbit hole into a world of paradox.\n\nStyle: balanced tone, diffuse and exploratory, semantically rich and nuanced\n\nRemember: Output should be approximately 11 words and maintain all the information from the original.\n<|im_end|>\n\n<|im_start|>assistant\n",
+          "duration": 1.1627161502838135,
+          "success": true,
+          "raw_response": "",
+          "cleaned_response": "",
+          "response_length": 73,
+          "response_words": 0,
+          "target_words": 11,
+          "length_ratio": 0.0,
+          "cleaning_applied": false
+        },
+        "errors": [],
+        "performance": {
+          "total_duration": 4.713623762130737,
+          "quantum_operations_time": 4.713411808013916,
+          "llm_time": 1.1627161502838135
+        },
+        "quantum_results": {
+          "quantum_distance": 1.6219664500383146e-16,
+          "bures_distance": 1.1353765150268203e-16,
+          "text_changed": true,
+          "transformation_successful": true
+        }
+      },
+      "processing_time": 0.0
+    }
+  ],
+  "parameters": {
+    "default_transformation": "enhance_narrative",
+    "default_strength": 0.7,
+    "creativity": 0.8,
+    "preservation": 0.8,
+    "complexity": 0.5
+  },
+  "completed_at": "2025-08-15T23:44:30.151707"
+}

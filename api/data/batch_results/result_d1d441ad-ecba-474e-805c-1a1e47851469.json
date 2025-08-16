@@ -1,0 +1,26 @@
+{
+  "operation": "gutenberg_analysis_batch",
+  "total_items": 2,
+  "successful_items": 0,
+  "failed_items": 2,
+  "results": [
+    {
+      "item_index": 0,
+      "book_id": 11,
+      "success": false,
+      "error": "Book API error: 500"
+    },
+    {
+      "item_index": 1,
+      "book_id": 1342,
+      "success": false,
+      "error": "Book API error: 500"
+    }
+  ],
+  "parameters": {
+    "transformation_type": "enhance_narrative",
+    "strength": 0.6,
+    "max_chars_per_book": 5000
+  },
+  "completed_at": "2025-08-16T00:20:35.632479"
+}

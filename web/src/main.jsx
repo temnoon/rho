@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState, useCallback } from "react";
 import { createRoot } from "react-dom/client";
+import { UnifiedWorkbench } from "./components/UnifiedWorkbench.jsx";
 import AttributeBrowser from "./AttributeBrowser.jsx";
 import NarrativeExplorer from "./components/NarrativeExplorer.jsx";
 import NarrativeTab from "./components/NarrativeTab.jsx";
@@ -255,53 +256,16 @@ const useSharedNarrative = () => {
 
 // Main Application
 function RhoWorkbench() {
-  const [activeTab, setActiveTab] = useState('distillation'); // Start with distillation studio
-
-  const tabs = [
-    { id: 'distillation', label: '⚗️ Distillation Studio', component: NarrativeDistillationStudio },
-    { id: 'archaeology', label: '🏛️ Matrix Archaeology', component: MatrixArchaeologyStudio },
-    { id: 'narrative', label: '🚀 Live Narrative', component: NarrativeTab },
-    { id: 'explorer', label: '🚀 Narrative Explorer', component: NarrativeExplorer },
-    { id: 'books', label: 'Book Reader', component: BookReaderTab },
-    { id: 'channel-observatory', label: '🔭 Channel Observatory', component: ChannelObservatoryTab },
-    { id: 'liminal-space', label: '🌌 Liminal Space', component: LiminalSpaceTab },
-    { id: 'queue', label: 'Batch Queue', component: BatchQueueTab },
-    { id: 'database', label: 'Database', component: DatabaseTab },
-    { id: 'dual-matrix', label: 'Dual Matrix', component: DualMatrixTab },
-    { id: 'query', label: 'LLM Query', component: QueryTab },
-  ];
-
-  const ActiveComponent = tabs.find(tab => tab.id === activeTab)?.component || NarrativeExplorer;
-
   return (
     <SharedNarrativeProvider>
       <div style={{ fontFamily: 'system-ui, -apple-system, Segoe UI, Roboto, sans-serif' }}>
         <GlobalRhoStatusHeader />
-      <div style={{ borderBottom: '1px solid #ddd', background: '#f8f9fa', padding: '0 20px' }}>
-        <h1 style={{ margin: 0, padding: '15px 0', fontSize: 22 }}>
-          Rho Narrative Humanizer — Enhanced Workbench
-        </h1>
-        <div style={{ display: 'flex', gap: 0, marginBottom: 0 }}>
-          {tabs.map(tab => (
-            <button
-              key={tab.id}
-              onClick={() => setActiveTab(tab.id)}
-              style={{
-                padding: '10px 20px',
-                border: 'none',
-                borderBottom: activeTab === tab.id ? '3px solid #2196f3' : '3px solid transparent',
-                background: activeTab === tab.id ? 'white' : 'transparent',
-                cursor: 'pointer',
-                fontWeight: activeTab === tab.id ? 600 : 400
-              }}
-            >
-              {tab.label}
-            </button>
-          ))}
+        <div style={{ borderBottom: '1px solid #ddd', background: '#f8f9fa', padding: '0 20px' }}>
+          <h1 style={{ margin: 0, padding: '15px 0', fontSize: 22 }}>
+            Rho Narrative Humanizer — Unified Quantum Workbench
+          </h1>
         </div>
-      </div>
-
-        <ActiveComponent />
+        <UnifiedWorkbench />
       </div>
     </SharedNarrativeProvider>
   );

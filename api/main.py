@@ -32,6 +32,15 @@ from routes.integrability_routes import router as integrability_router
 from routes.channel_composition_routes import router as channel_composition_router
 from routes.persistence_routes import router as persistence_router
 from routes.matrix_library_routes import router as matrix_library_router
+from routes.aplg_routes import router as aplg_router
+from routes.residue_routes import router as residue_router
+from routes.consent_routes import router as consent_router
+from routes.aplg_test_routes import router as aplg_test_router
+from routes.invariant_editor_routes import router as invariant_editor_router
+from routes.curriculum_routes import router as curriculum_router
+from routes.visualization_routes import router as visualization_router
+from routes.transformation_routes import router as transformation_router
+from routes.gutenberg_routes import router as gutenberg_router
 from utils.persistence import auto_saver, load_state, load_packs
 
 # Configure logging
@@ -123,6 +132,15 @@ app.include_router(integrability_router)
 app.include_router(channel_composition_router)
 app.include_router(persistence_router)
 app.include_router(matrix_library_router)
+app.include_router(aplg_router)
+app.include_router(residue_router)
+app.include_router(consent_router)
+app.include_router(aplg_test_router)
+app.include_router(invariant_editor_router)
+app.include_router(curriculum_router)
+app.include_router(visualization_router)
+app.include_router(transformation_router)
+app.include_router(gutenberg_router)
 
 # Basic routes
 @app.get("/")

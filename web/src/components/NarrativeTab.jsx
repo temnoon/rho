@@ -232,7 +232,7 @@ function NarrativeTab() {
   return (
     <div style={{ 
       display: 'flex', 
-      minHeight: '100vh',
+      minHeight: '45vh',
       height: '100%',
       padding: '16px', 
       gap: '16px',
@@ -255,7 +255,7 @@ function NarrativeTab() {
         display: 'flex',
         flexDirection: 'column',
         gap: '12px',
-        height: 'calc(100vh - 32px)',
+        height: 'calc(45vh - 32px)',
         overflowY: 'auto',
         backgroundColor: '#f8f9fa',
         padding: '16px',
@@ -434,7 +434,7 @@ function NarrativeTab() {
         display: 'flex',
         flexDirection: 'column',
         gap: '16px',
-        height: 'calc(100vh - 32px)',
+        height: 'calc(45vh - 32px)',
         overflowY: 'auto',
         overflowX: 'hidden',
         paddingRight: '8px',

@@ -1,0 +1,296 @@
+{
+  "operation": "quantum_transformation_batch",
+  "total_items": 3,
+  "successful_items": 3,
+  "failed_items": 0,
+  "results": [
+    {
+      "item_index": 0,
+      "success": true,
+      "original_text": "Alice wondered down the rabbit hole into a world of paradox.",
+      "transformed_text": "Alice pondered down the rabbit hole into a realm of enigmatic paradox.",
+      "quantum_distance": 1.6219664500383146e-16,
+      "audit_trail": {
+        "strategy": "pure_quantum",
+        "decision_metadata": {
+          "complexity_analysis": {
+            "token_count": 11,
+            "sentence_count": 2,
+            "avg_sentence_length": 5.5,
+            "paragraph_count": 1,
+            "punctuation_density": 0.016666666666666666,
+            "concept_density": 72.72727272727273,
+            "syntactic_complexity": 0.36666666666666664,
+            "domain_specificity": 0.0
+          },
+          "decision_factors": {
+            "text_length": 11,
+            "complexity_score": 0.36464646464646466,
+            "structural_requirements": 0.6666666666666666,
+            "creativity_allowance": true,
+            "format_complexity": 0
+          },
+          "strategy_scores": {
+            "pure_quantum": 0.75,
+            "llm_guided": 0.3,
+            "quantum_first_llm_refine": 0.6,
+            "llm_first_quantum_embed": 0.5,
+            "hybrid_iterative": 0.3
+          },
+          "confidence": 0.75,
+          "reasoning": "short text suitable for direct quantum processing; structure preservation favors quantum coherence; low complexity allows clean quantum transformation"
+        },
+        "timestamp": 1755318030.9879081,
+        "request_parameters": {
+          "text_length": 60,
+          "text_preview": "Alice wondered down the rabbit hole into a world of paradox.",
+          "transformation_name": "enhance_narrative",
+          "strength": 0.7,
+          "creativity_level": 0.8,
+          "preservation_level": 0.8,
+          "complexity_target": 0.5,
+          "tone_target": "balanced",
+          "focus_area": "meaning",
+          "agent_request": null
+        },
+        "quantum_steps": [
+          {
+            "step": 1,
+            "name": "create_quantum_state",
+            "description": "Initialize quantum density matrix ρ",
+            "rho_id": "60501222-bc00-4eca-bb94-d67aeba47e3b",
+            "duration": 0.0003418922424316406
+          },
+          {
+            "step": 2,
+            "name": "text_to_quantum_state",
+            "description": "Convert text to quantum density matrix via embedding",
+            "channel_type": "rank_one_update",
+            "alpha": 0.3,
+            "original_properties": {
+              "trace": 1.0,
+              "purity": 0.01566855620178824,
+              "max_eigenvalue": 0.022172949002191297,
+              "effective_rank": 64
+            },
+            "duration": 0.06683492660522461,
+            "success": true
+          },
+          {
+            "step": 3,
+            "name": "quantum_state_normalization",
+            "description": "Ensure ρ is positive semidefinite and trace-normalized after POVM operations",
+            "normalization_details": {
+              "negative_eigenvals_removed": 0,
+              "final_trace": 1.0000000000000002,
+              "final_purity": 0.01566855620178824,
+              "effective_rank": 64
+            },
+            "duration": 0.00021314620971679688,
+            "success": true
+          },
+          {
+            "step": 4,
+            "name": "quantum_to_text_generation",
+            "description": "Generate new text by projecting modified ρ through quantum embedding bridge",
+            "generation_details": {
+              "quantum_entropy": 4.157648648705052,
+              "final_purity": 0.01566855620178824,
+              "effective_rank": 64,
+              "dominant_eigenvalue": 0.02217294900219129,
+              "text_generated": true,
+              "original_length": 60,
+              "transformed_length": 70
+            },
+            "duration": 2.2307779788970947,
+            "success": true
+          }
+        ],
+        "llm_interaction": {
+          "provider": "ollama",
+          "model": "llama3.2",
+          "attempts": [
+            {
+              "provider": "groq",
+              "status_code": 200,
+              "duration": 1.2567589282989502,
+              "success": true,
+              "request_params": {
+                "model": "openai/gpt-oss-120b",
+                "messages": [
+                  {
+                    "role": "system",
+                    "content": "You are a text transformation engine. Your ONLY job is to output the transformed text that preserves the full length and detail of the original. The target output should be approximately 11 words. Do NOT provide explanations, analyses, or commentary. Output ONLY the transformed text - no bullet points, no lists, no meta-commentary about changes made."
+                  },
+                  {
+                    "role": "user",
+                    "content": "Transform this text while preserving its full length and all details: Alice wondered down the rabbit hole into a world of paradox.\n\nStyle: balanced tone, diffuse and exploratory, semantically rich and nuanced\n\nRemember: Output should be approximately 11 words and maintain all the information from the original.\n"
+                  }
+                ],
+                "temperature": 0.3,
+                "max_tokens": 500,
+                "top_p": 0.9,
+                "stop": [
+                  "<|im_end|>",
+                  "\n\n---",
+                  "\n\n*"
+                ]
+              }
+            }
+          ],
+          "prompt_used": "<|im_start|>system\nYou are a text transformation engine. Your ONLY job is to output the transformed text that preserves the full length and detail of the original.\n\nCRITICAL REQUIREMENTS:\n- Output ONLY the transformed text\n- PRESERVE THE FULL LENGTH: Your output should be approximately 11 words (60 characters)\n- MAINTAIN ALL DETAILS: Do not summarize, condense, or shorten the content\n- Transform style/tone while keeping ALL information and sections\n- NO meta-commentary, explanations, or bullet points\n- If the original has multiple paragraphs, maintain that structure\n- Transform each part fully rather than summarizing\n\nStyle guidance: balanced tone, diffuse and exploratory, semantically rich and nuanced\nThe original text is 11 words long. Your transformation must be similarly comprehensive.\n<|im_end|>\n\n<|im_start|>user\nTransform this text while preserving its full length and all details: Alice wondered down the rabbit hole into a world of paradox.\n\nStyle: balanced tone, diffuse and exploratory, semantically rich and nuanced\n\nRemember: Output should be approximately 11 words and maintain all the information from the original.\n<|im_end|>\n\n<|im_start|>assistant\n",
+          "duration": 1.2567589282989502,
+          "success": true,
+          "raw_response": "",
+          "cleaned_response": "",
+          "response_length": 70,
+          "response_words": 0,
+          "target_words": 11,
+          "length_ratio": 0.0,
+          "cleaning_applied": false
+        },
+        "errors": [],
+        "performance": {
+          "total_duration": 2.2983648777008057,
+          "quantum_operations_time": 2.2981679439544678,
+          "llm_time": 1.2567589282989502
+        },
+        "quantum_results": {
+          "quantum_distance": 1.6219664500383146e-16,
+          "bures_distance": 1.1353765150268203e-16,
+          "text_changed": true,
+          "transformation_successful": true
+        }
+      },
+      "processing_time": 0.0,
+      "strategy_used": "pure_quantum",
+      "decision_reasoning": "short text suitable for direct quantum processing; structure preservation favors quantum coherence; low complexity allows clean quantum transformation",
+      "quality_assessment": {
+        "quantum_coherence": 2.4044915364340724e-11,
+        "semantic_preservation": 0.6428571428571429,
+        "structural_integrity": 1.0,
+        "information_density": 1.0,
+        "embedding_alignment": 0.8,
+        "transformation_distance": 1.6219664500383146e-16
+      },
+      "recommendations": [
+        "Consider increasing quantum state preparation steps",
+        "Increase transformation strength or check POVM effectiveness"
+      ]
+    },
+    {
+      "item_index": 1,
+      "success": true,
+      "original_text": "The quantum realm holds mysteries beyond imagination that challenge our understanding of reality itself.",
+      "transformed_text": "LLM-guided transformation of: The quantum realm holds mysteries beyond imagination that challenge our understanding of reality itself. [quantum-embedded]",
+      "quantum_distance": 0.0,
+      "audit_trail": {
+        "strategy": "llm_first_quantum_embed",
+        "decision_metadata": {
+          "complexity_analysis": {
+            "token_count": 14,
+            "sentence_count": 2,
+            "avg_sentence_length": 7.0,
+            "paragraph_count": 1,
+            "punctuation_density": 0.009615384615384616,
+            "concept_density": 78.57142857142857,
+            "syntactic_complexity": 0.4666666666666667,
+            "domain_specificity": 1.0
+          },
+          "decision_factors": {
+            "text_length": 14,
+            "complexity_score": 0.7507936507936508,
+            "structural_requirements": 0.6666666666666666,
+            "creativity_allowance": true,
+            "format_complexity": 0
+          },
+          "strategy_scores": {
+            "pure_quantum": 0.55,
+            "llm_guided": 0.44999999999999996,
+            "quantum_first_llm_refine": 0.6,
+            "llm_first_quantum_embed": 0.75,
+            "hybrid_iterative": 0.3
+          },
+          "confidence": 0.75,
+          "reasoning": "technical content benefits from LLM understanding then quantum embedding; coherence requirement favors LLM-first approach"
+        }
+      },
+      "processing_time": 0.0,
+      "strategy_used": "llm_first_quantum_embed",
+      "decision_reasoning": "technical content benefits from LLM understanding then quantum embedding; coherence requirement favors LLM-first approach",
+      "quality_assessment": {
+        "quantum_coherence": 2.4044915364340724e-11,
+        "semantic_preservation": 0.7777777777777778,
+        "structural_integrity": 1.0,
+        "information_density": 1.0,
+        "embedding_alignment": 0.8,
+        "transformation_distance": 0.0
+      },
+      "recommendations": [
+        "Consider increasing quantum state preparation steps",
+        "Increase transformation strength or check POVM effectiveness"
+      ]
+    },
+    {
+      "item_index": 2,
+      "success": true,
+      "original_text": "Heart Sutra Science integrates ancient wisdom with modern phenomenological insights to explore consciousness and interconnectedness.",
+      "transformed_text": "LLM-guided transformation of: Heart Sutra Science integrates ancient wisdom with modern phenomenological insights to explore consciousness and interconnectedness. [quantum-embedded]",
+      "quantum_distance": 0.0,
+      "audit_trail": {
+        "strategy": "llm_first_quantum_embed",
+        "decision_metadata": {
+          "complexity_analysis": {
+            "token_count": 15,
+            "sentence_count": 2,
+            "avg_sentence_length": 7.5,
+            "paragraph_count": 1,
+            "punctuation_density": 0.007575757575757576,
+            "concept_density": 86.66666666666667,
+            "syntactic_complexity": 0.5,
+            "domain_specificity": 1.0
+          },
+          "decision_factors": {
+            "text_length": 15,
+            "complexity_score": 0.7888888888888889,
+            "structural_requirements": 0.6666666666666666,
+            "creativity_allowance": true,
+            "format_complexity": 0
+          },
+          "strategy_scores": {
+            "pure_quantum": 0.55,
+            "llm_guided": 0.44999999999999996,
+            "quantum_first_llm_refine": 0.6,
+            "llm_first_quantum_embed": 0.75,
+            "hybrid_iterative": 0.3
+          },
+          "confidence": 0.75,
+          "reasoning": "technical content benefits from LLM understanding then quantum embedding; coherence requirement favors LLM-first approach"
+        }
+      },
+      "processing_time": 0.0,
+      "strategy_used": "llm_first_quantum_embed",
+      "decision_reasoning": "technical content benefits from LLM understanding then quantum embedding; coherence requirement favors LLM-first approach",
+      "quality_assessment": {
+        "quantum_coherence": 2.4044915364340724e-11,
+        "semantic_preservation": 0.7894736842105263,
+        "structural_integrity": 1.0,
+        "information_density": 1.0,
+        "embedding_alignment": 0.8,
+        "transformation_distance": 0.0
+      },
+      "recommendations": [
+        "Consider increasing quantum state preparation steps",
+        "Increase transformation strength or check POVM effectiveness"
+      ]
+    }
+  ],
+  "parameters": {
+    "default_transformation": "enhance_narrative",
+    "default_strength": 0.7,
+    "creativity": 0.8,
+    "preservation": 0.8,
+    "complexity": 0.5
+  },
+  "completed_at": "2025-08-16T00:20:36.316147"
+}

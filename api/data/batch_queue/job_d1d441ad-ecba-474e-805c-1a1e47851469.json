@@ -1,0 +1,26 @@
+{
+  "job_id": "d1d441ad-ecba-474e-805c-1a1e47851469",
+  "status": "completed",
+  "created_at": 1755315958.3677208,
+  "completed_at": 1755318035.633791,
+  "progress": 1.0,
+  "result": null,
+  "error": null,
+  "operation": "gutenberg_analysis_batch",
+  "parameters": {
+    "transformation_type": "enhance_narrative",
+    "strength": 0.6,
+    "max_chars_per_book": 5000
+  },
+  "items": [
+    {
+      "book_id": 11,
+      "analysis_type": "full_transformation"
+    },
+    {
+      "book_id": 1342,
+      "analysis_type": "full_transformation"
+    }
+  ],
+  "scheduled_for": null
+}

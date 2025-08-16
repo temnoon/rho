@@ -1,0 +1,159 @@
+{
+  "overall_pass": false,
+  "pass_rate": 0.8571428571428571,
+  "total_tests": 7,
+  "passed_tests": 6,
+  "duration": 6.250170946121216,
+  "detailed_results": {
+    "density_matrix_properties": {
+      "passed": true,
+      "timestamp": "2025-08-15T15:51:38.239913",
+      "details": {
+        "trace": 1.0,
+        "min_eigenval": 0.015625,
+        "purity": 0.015625,
+        "dimension": 64,
+        "hermitian": true
+      }
+    },
+    "quantum_diagnostics_validation": {
+      "passed": true,
+      "timestamp": "2025-08-15T15:51:38.240675",
+      "details": {
+        "trace": 1.0,
+        "purity": 0.015625,
+        "entropy": 4.158883083295671,
+        "effective_rank": 64,
+        "validation_errors": 0
+      }
+    },
+    "text_channel_properties": {
+      "passed": true,
+      "timestamp": "2025-08-15T15:51:38.660202",
+      "details": {
+        "initial_trace": 1.0,
+        "final_trace": 0.9999999999999999,
+        "trace_error": 1.1102230246251565e-16,
+        "output_valid": true,
+        "min_eigenval": 0.015521064301552449
+      }
+    },
+    "povm_measurement_consistency": {
+      "passed": false,
+      "timestamp": "2025-08-15T15:51:38.907954",
+      "details": {
+        "num_measurements": 40,
+        "all_probabilities_valid": true,
+        "trace": 1.0,
+        "trace_valid": true,
+        "pair_sums_valid": false,
+        "pair_details": {
+          "involved_production": {
+            "sum": 0.031257776094962865,
+            "valid": false
+          },
+          "abstract_information": {
+            "sum": 0.03124452218204607,
+            "valid": false
+          },
+          "field_register": {
+            "sum": 0.031249087161933142,
+            "valid": false
+          },
+          "tenor_formality": {
+            "sum": 0.031234964836604498,
+            "valid": false
+          },
+          "tenor_affect": {
+            "sum": 0.03125099262660295,
+            "valid": false
+          },
+          "mode_density": {
+            "sum": 0.031231669373085844,
+            "valid": false
+          },
+          "temporal_perspective": {
+            "sum": 0.031243159414375207,
+            "valid": false
+          },
+          "focalization_type": {
+            "sum": 0.031228498515645905,
+            "valid": false
+          },
+          "narrative_distance": {
+            "sum": 0.03125738140503128,
+            "valid": false
+          },
+          "discourse_coherence": {
+            "sum": 0.03124727491375512,
+            "valid": false
+          },
+          "reader_engagement": {
+            "sum": 0.0312566738905883,
+            "valid": false
+          },
+          "cognitive_load": {
+            "sum": 0.031242879779062125,
+            "valid": false
+          },
+          "genre_conformity": {
+            "sum": 0.031241752691316443,
+            "valid": false
+          },
+          "multimodal_integration": {
+            "sum": 0.031247435114636582,
+            "valid": false
+          },
+          "intertextual_density": {
+            "sum": 0.03123582467874455,
+            "valid": false
+          }
+        }
+      }
+    },
+    "integrability_mathematics": {
+      "passed": true,
+      "timestamp": "2025-08-15T15:51:42.649045",
+      "details": {
+        "simple_bures_distance": 0.009108705220729377,
+        "simple_passes_test": false,
+        "complex_bures_distance": 0.04119844972535966,
+        "complexity_ordering_valid": true,
+        "bures_threshold_met": true
+      }
+    },
+    "bures_geometry_properties": {
+      "passed": true,
+      "timestamp": "2025-08-15T15:51:43.473352",
+      "details": {
+        "identity_distance": 0.0,
+        "symmetry_diff": 0.0,
+        "triangle_inequality_satisfied": true,
+        "distances": {
+          "d_12": 0.006702758270919945,
+          "d_13": 0.014610409682210342,
+          "d_23": 0.016146197559536526
+        },
+        "fidelity": 0.9999550735361697,
+        "all_non_negative": true
+      }
+    },
+    "api_quantum_consistency": {
+      "passed": true,
+      "timestamp": "2025-08-15T15:51:44.489220",
+      "details": {
+        "init_trace": 1.0,
+        "read_trace": 1.0,
+        "measure_trace": 1.0,
+        "channel_passes_audit": true,
+        "measurements_count": 40,
+        "probabilities_valid": true,
+        "aplg_available": true,
+        "integrability_result": 1.4901161193847656e-08
+      }
+    }
+  },
+  "errors": [],
+  "warnings": [],
+  "timestamp": "2025-08-15T15:51:44.489447"
+}

@@ -1,0 +1,35 @@
+{
+  "job_id": "091d23f8-2a7e-4856-ba3f-0790019ddbce",
+  "status": "completed",
+  "created_at": 1755315780.108472,
+  "completed_at": 1755315798.533807,
+  "progress": 1.0,
+  "result": null,
+  "error": null,
+  "operation": "quantum_transformation_batch",
+  "parameters": {
+    "default_transformation": "enhance_narrative",
+    "default_strength": 0.8,
+    "creativity": 0.9,
+    "preservation": 0.7,
+    "complexity": 0.6
+  },
+  "items": [
+    {
+      "text": "The quantum realm holds mysteries beyond imagination.",
+      "transformation_type": "enhance_narrative",
+      "strength": 0.8
+    },
+    {
+      "text": "Narrative transformations reveal hidden dimensions of meaning.",
+      "transformation_type": "enhance_narrative",
+      "strength": 0.8
+    },
+    {
+      "text": "Through the lens of consciousness, reality shifts and morphs.",
+      "transformation_type": "enhance_narrative",
+      "strength": 0.8
+    }
+  ],
+  "scheduled_for": null
+}

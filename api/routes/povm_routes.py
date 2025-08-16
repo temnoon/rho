@@ -22,10 +22,10 @@ from models.requests import (
     PackModel,
     PackAxis,
     MeasurementResponse,
-    DiagnosticsResponse,
     PackListResponse,
     PackInfo
 )
+from models.quantum_models import QuantumDiagnostics
 from core.quantum_state import diagnostics
 
 logger = logging.getLogger(__name__)
@@ -231,7 +231,9 @@ def measure_rho(rho_id: str, req: MeasureReq):
     
     return MeasurementResponse(
         measurements=measurements,
-        diagnostics=DiagnosticsResponse(**diag)
+        diagnostics=QuantumDiagnostics(**diag),
+        pack_id=req.pack_id,
+        rho_id=rho_id
     )
 
 

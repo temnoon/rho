@@ -73,7 +73,40 @@ def embed(text: str) -> np.ndarray:
     
     text = text.strip()
     
-    # Try OpenAI embeddings first (if API key is available)
+    # Try Ollama nomic-embed-text first (local, fast, reliable)
+    try:
+        response = requests.post(
+            "http://localhost:11434/api/embeddings",
+            json={
+                "model": "nomic-embed-text",
+                "prompt": text
+            },
+            timeout=15  # Local should be fast, but allow time for model loading
+        )
+        if response.status_code == 200:
+            data = response.json()
+            embedding = data["embedding"]
+            logger.info(f"Successfully embedded with Ollama nomic-embed-text ({len(embedding)}D)")
+            return np.array(embedding, dtype=np.float32)
+    except Exception as e:
+        logger.warning(f"Ollama nomic-embed-text failed: {e}")
+    
+    # Try external embedding service
+    if EMBED_URL:
+        try:
+            response = requests.post(
+                EMBED_URL,
+                json={"text": text},
+                timeout=10
+            )
+            if response.status_code == 200:
+                data = response.json()
+                if "embedding" in data:
+                    return np.array(data["embedding"], dtype=np.float32)
+        except Exception as e:
+            logger.warning(f"External embedding service failed: {e}")
+    
+    # Try OpenAI embeddings as fallback (if API key is available)
     openai_api_key = os.getenv("OPENAI_API_KEY")
     if openai_api_key:
         try:
@@ -97,21 +130,6 @@ def embed(text: str) -> np.ndarray:
                 return np.array(embedding, dtype=np.float32)
         except Exception as e:
             logger.warning(f"OpenAI embedding failed: {e}")
-    
-    # Try external embedding service
-    if EMBED_URL:
-        try:
-            response = requests.post(
-                EMBED_URL,
-                json={"text": text},
-                timeout=10
-            )
-            if response.status_code == 200:
-                data = response.json()
-                if "embedding" in data:
-                    return np.array(data["embedding"], dtype=np.float32)
-        except Exception as e:
-            logger.warning(f"External embedding service failed: {e}")
     
     # Try HuggingFace sentence-transformers with better models
     try:
@@ -337,9 +355,134 @@ def text_to_embedding_vector(text: str) -> np.ndarray:
     return v / norm
 
 
+def hierarchical_embed(text: str, max_chunks: int = 8) -> dict:
+    """
+    Create hierarchical embeddings for both detail and summary matching.
+    
+    This function:
+    1. Splits long text into semantic chunks
+    2. Creates embeddings for each chunk (detail level)
+    3. Creates an embedding for the full text (summary level)
+    4. Combines them into a hierarchical structure for better cosine search
+    
+    Args:
+        text: Input text to embed hierarchically
+        max_chunks: Maximum number of chunks for detail embedding
+        
+    Returns:
+        Dictionary with hierarchical embedding data
+    """
+    if not text or not text.strip():
+        return {
+            "summary_embedding": np.zeros(768),
+            "detail_embeddings": [],
+            "chunk_texts": [],
+            "combined_embedding": np.zeros(768),
+            "text_length": 0,
+            "num_chunks": 0
+        }
+    
+    text = text.strip()
+    text_length = len(text)
+    
+    # Split text into semantic chunks for detail embedding
+    chunks = split_text_semantically(text, max_chunks)
+    
+    # Create detail embeddings for each chunk
+    detail_embeddings = []
+    for chunk in chunks:
+        if chunk.strip():
+            chunk_embedding = embed(chunk)
+            detail_embeddings.append(chunk_embedding)
+    
+    # Create summary embedding for the full text
+    summary_embedding = embed(text)
+    
+    # Combine embeddings: weighted average of summary + details
+    if detail_embeddings:
+        detail_stack = np.array(detail_embeddings)
+        detail_mean = np.mean(detail_stack, axis=0)
+        
+        # Weight summary more heavily for shorter texts, details more for longer texts
+        summary_weight = max(0.3, 1.0 - (text_length / 5000))  # 0.3 to 1.0
+        detail_weight = 1.0 - summary_weight
+        
+        combined_embedding = (summary_weight * summary_embedding + 
+                            detail_weight * detail_mean)
+        
+        # Normalize the combined embedding
+        combined_embedding = combined_embedding / (np.linalg.norm(combined_embedding) + 1e-10)
+    else:
+        combined_embedding = summary_embedding
+    
+    return {
+        "summary_embedding": summary_embedding,
+        "detail_embeddings": detail_embeddings,
+        "chunk_texts": chunks,
+        "combined_embedding": combined_embedding,
+        "text_length": text_length,
+        "num_chunks": len(chunks)
+    }
+
+
+def split_text_semantically(text: str, max_chunks: int = 8) -> list:
+    """
+    Split text into semantic chunks for hierarchical embedding.
+    
+    Uses multiple strategies:
+    1. Paragraph boundaries
+    2. Sentence boundaries  
+    3. Length-based splitting as fallback
+    
+    Args:
+        text: Text to split
+        max_chunks: Maximum number of chunks to create
+        
+    Returns:
+        List of text chunks
+    """
+    if len(text) < 200:  # Short text, don't split
+        return [text]
+    
+    # Strategy 1: Split by paragraphs (double newlines)
+    paragraphs = [p.strip() for p in text.split('\n\n') if p.strip()]
+    if len(paragraphs) <= max_chunks and all(len(p) > 50 for p in paragraphs):
+        return paragraphs[:max_chunks]
+    
+    # Strategy 2: Split by sentences
+    import re
+    sentence_ends = re.compile(r'[.!?]+\s+')
+    sentences = [s.strip() for s in sentence_ends.split(text) if s.strip()]
+    
+    if len(sentences) <= max_chunks:
+        return sentences[:max_chunks]
+    
+    # Strategy 3: Combine sentences into chunks of reasonable size
+    chunks = []
+    current_chunk = ""
+    target_chunk_size = len(text) // max_chunks
+    
+    for sentence in sentences:
+        if len(current_chunk) + len(sentence) < target_chunk_size or not current_chunk:
+            current_chunk += sentence + " "
+        else:
+            if current_chunk.strip():
+                chunks.append(current_chunk.strip())
+            current_chunk = sentence + " "
+            
+            if len(chunks) >= max_chunks - 1:  # Save space for last chunk
+                break
+    
+    # Add remaining text as last chunk
+    if current_chunk.strip():
+        chunks.append(current_chunk.strip())
+    
+    return chunks[:max_chunks]
+
+
 def text_to_rho(text: str) -> np.ndarray:
     """
-    Convert text directly to a density matrix.
+    Convert text directly to a density matrix using hierarchical embedding.
     
     Args:
         text: Input text
@@ -349,9 +492,12 @@ def text_to_rho(text: str) -> np.ndarray:
     """
     from .quantum_state import create_pure_state
     
-    # Embed and project to local space
-    x = embed(text)
-    v = project_to_local(x)
+    # Use hierarchical embedding for better semantic representation
+    hierarchical_data = hierarchical_embed(text)
+    
+    # Use combined embedding that includes both summary and detail information
+    combined_embedding = hierarchical_data["combined_embedding"]
+    v = project_to_local(combined_embedding)
     
     # Create pure state density matrix
     return create_pure_state(v)

@@ -1,0 +1,35 @@
+{
+  "job_id": "11dd51c1-359c-4040-bfb2-ce3c8cf0ba70",
+  "status": "completed",
+  "created_at": 1755318021.7037382,
+  "completed_at": 1755318036.3183339,
+  "progress": 1.0,
+  "result": null,
+  "error": null,
+  "operation": "quantum_transformation_batch",
+  "parameters": {
+    "default_transformation": "enhance_narrative",
+    "default_strength": 0.7,
+    "creativity": 0.8,
+    "preservation": 0.8,
+    "complexity": 0.5
+  },
+  "items": [
+    {
+      "text": "Alice wondered down the rabbit hole into a world of paradox.",
+      "transformation_type": "enhance_narrative",
+      "strength": 0.7
+    },
+    {
+      "text": "The quantum realm holds mysteries beyond imagination that challenge our understanding of reality itself.",
+      "transformation_type": "enhance_narrative",
+      "strength": 0.7
+    },
+    {
+      "text": "Heart Sutra Science integrates ancient wisdom with modern phenomenological insights to explore consciousness and interconnectedness.",
+      "transformation_type": "enhance_narrative",
+      "strength": 0.7
+    }
+  ],
+  "scheduled_for": null
+}

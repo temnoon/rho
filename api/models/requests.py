@@ -186,6 +186,15 @@ class CustomAttributeRequest(BaseModel):
     examples: Optional[List[str]] = Field(default=None, description="Example texts")
 
 
+# Import standardized quantum models
+from .quantum_models import (
+    QuantumDiagnostics, 
+    POVMMeasurements, 
+    QuantumState,
+    QuantumOperationResponse,
+    QuantumValidationError
+)
+
 # Response models
 
 class HealthResponse(BaseModel):
@@ -196,27 +205,22 @@ class HealthResponse(BaseModel):
     rhos: int = Field(description="Number of density matrices")
 
 
-class DiagnosticsResponse(BaseModel):
-    """Density matrix diagnostics response."""
-    trace: float = Field(description="Matrix trace")
-    purity: float = Field(description="Quantum purity Tr(ρ²)")
-    entropy: float = Field(description="Von Neumann entropy")
-    eigenvals: List[float] = Field(description="Top eigenvalues")
-    effective_rank: int = Field(description="Number of significant eigenvalues")
-    condition_number: float = Field(description="Condition number")
-
+# Use standardized quantum diagnostics
+DiagnosticsResponse = QuantumDiagnostics
 
 class MeasurementResponse(BaseModel):
-    """POVM measurement response."""
+    """POVM measurement response - uses standardized structure."""
     measurements: Dict[str, float] = Field(description="Measurement probabilities")
-    diagnostics: DiagnosticsResponse = Field(description="Matrix diagnostics")
+    diagnostics: QuantumDiagnostics = Field(description="Matrix diagnostics")
+    pack_id: str = Field(description="POVM pack used")
+    rho_id: str = Field(description="Quantum state measured")
 
 
 class MatrixResponse(BaseModel):
-    """General matrix response."""
+    """General matrix response - uses standardized structure."""
     rho_id: str = Field(description="Matrix identifier")
     matrix: List[List[float]] = Field(description="Matrix entries as nested list")
-    diagnostics: DiagnosticsResponse = Field(description="Matrix diagnostics")
+    diagnostics: QuantumDiagnostics = Field(description="Matrix diagnostics")
     label: Optional[str] = Field(default=None, description="Matrix label")
 
 

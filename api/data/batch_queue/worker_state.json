@@ -1,0 +1,12 @@
+{
+  "running": false,
+  "current_jobs": [],
+  "stats": {
+    "started_at": "2025-08-16T00:20:30.559252",
+    "jobs_processed": 2,
+    "jobs_succeeded": 2,
+    "jobs_failed": 0,
+    "last_activity": "2025-08-16T00:20:36.318657"
+  },
+  "last_updated": "2025-08-16T00:20:45.575335"
+}
